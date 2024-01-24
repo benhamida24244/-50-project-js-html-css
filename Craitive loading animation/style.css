@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(40, 45, 121);
+}
+
+.warpper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.warpper .loader {
+     display: flex;
+     justify-content: space-evenly;
+     padding: 0 20px;
+}
+.loader .lecader {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background : #fff;
+    animation: load  0.8s ease infinite;
+}
+
+.loader .lecader.one { 
+    animation-delay: 0.3s
+}
+
+.loader.lecader.two { 
+    animation-delay: 0.4s
+}
+
+.loader.lecader.three { 
+    animation-delay: 0.5s
+}
+
+@keyframes load {
+    0% {
+        width: 30px;
+        height: 30px;
+    }
+    50% {
+        width: 20px;
+        height: 20px;
+    }
+}
