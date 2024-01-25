@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(198, 28, 28);
+}
+
+.card.title {
+    font-size: 20px;
+    color: #fff;
+    
+}
+
+.card p {
+   width: 700px;
+   padding: 10px;
+   background-color: rgb(231, 231, 223);
+}
