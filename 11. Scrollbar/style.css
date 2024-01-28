@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    font-family: 'Courier New';
+}
+
+.scrool-container {
+    background: rgb(7, 7, 7);
+    width: 25rem;
+    padding: 30px;
+}
+
+.scrool-div {
+    width: 400px;
+    height: 500px;
+    font-size: 18px;
+    color: #fff;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.scrool-object {
+    padding: 20px
+}
