@@ -1,0 +1,24 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#emogies {
+    font-size: 10rem;
+    filter: grayscale(1);
+    transition-property: transfrom, filter;
+    transition-duration: 200ms;
+    cursor: pointer;
+  }
+
+  #emogies:hover {
+    transform: scale(1.3);
+    filter: grayscale(0);
+  }
