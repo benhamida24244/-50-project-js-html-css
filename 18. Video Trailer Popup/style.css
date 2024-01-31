@@ -1,0 +1,84 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    background: url(thumb-1920-597965.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+}
+
+img {
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    width: 100px;
+    cursor: pointer;
+    animation: borber 1s ease-in infinite;
+}
+
+@keyframes borber {
+    0% {
+        transform: translateY(0%);
+        animation-timing-function: ease-out;
+    }
+    50% {
+        transform: translateY(-20%);
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+      }
+
+}
+
+.convid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.7s;
+}
+
+.convid video {
+   position: relative;
+   max-width: 900px;
+   outline: none;
+}
+
+.close-icon {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #f26415;
+    cursor: pointer;
+    font-size: 40px;
+    font-family: sans-serif;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+@media (max-width: 991px) {
+    .trailer-container video {
+      max-width: 90%;
+    }
+  }
+
+  .active.convid {
+    visibility: hidden;
+    opacity: 0;
+  }
